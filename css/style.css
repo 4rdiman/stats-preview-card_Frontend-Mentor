@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
+/* container */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main{
+    width: 320px;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    padding-bottom: 1.5rem;
+}
+
+/* image */
+.image{
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 100%, 28%, 0.6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.mobile-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* text */
+.text{
+    padding: 1.5rem;
+    color: white;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.highlight{
+    color: hsl(277, 64%, 61%);
+}
+
+.description{
+    padding-top: 1rem;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container-view{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: uppercase;
+}
+
+.view > :nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.view > :nth-child(2){
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+
+
+@media screen and (min-width: 428px){
+    main{
+        display: flex;
+    }
+}
+
